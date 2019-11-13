@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/pruebas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textColor="#FFAAF1"
+            android:textStyle="bold"
+            android:text="ALQUILER\nMEDIOS MOVIDIDAD" />
+        <ImageView
+            android:id="@+id/imagenTitulo"
+            android:layout_marginTop="15dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/movilidad" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtResul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="¡Elege el tipo de transporte y las opciones que tu desees!"/>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignBounds"
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="10dp"
+        android:columnCount="3"
+        android:rowCount="1">
+
+
+        <Spinner
+            android:id="@+id/simpleSpinner"
+            android:layout_width="140dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:entries="@array/bicicletas"/>
+
+
+
+        <RadioButton
+            android:id="@+id/buttonSinSeguro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="Sin Seguro" />
+
+        <RadioButton
+            android:id="@+id/buttonConSeguro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="Seguro Completo" />
+    </GridLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/buttonCascos"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Cascos/guantes" />
+
+        <RadioButton
+            android:id="@+id/buttonGPS"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="Incluye GPS" />
+
+        <RadioButton
+            android:id="@+id/extras"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="Mas Extras" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        >
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="Button" />
+
+        <EditText
+            android:id="@+id/textdias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Ingresa el numero de dias" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btncontinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:text="CONTINUAR" />
+
+
+
+</LinearLayout>
+
+
+
+
