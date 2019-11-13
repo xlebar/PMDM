@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ExamenPMDM_Alejandro_Benitez</string>
+    <item name="bicicletas" type="array">
+        <resourse>
+            <item>Paseo</item>
+            <item>Ciudad</item>
+            <item>Montaña</item>
+        </resourse>
+    </item>
+</resources>
